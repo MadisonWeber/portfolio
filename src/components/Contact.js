@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Contact = () => {
+
+ 
+
     return (
         <div className = 'contact-container'>
             <h3>Contact Me</h3>
@@ -12,7 +15,7 @@ const Contact = () => {
             
             <div className = 'form-container'>
                 <h6>Send me a message right here</h6>
-                <form name="contact"  method = 'post'>
+                <form name="contact"  method = 'post' >
                     <input type="hidden" name="form-name" value="contact" />
                     <p>
                         <input type="text" name="name" placeholder = 'Name'/>
@@ -24,7 +27,7 @@ const Contact = () => {
                          <textarea name="message" placeholder = "Message.."></textarea>
                     </p>
                     <p>
-                        <button type="submit" className = 'submitBtn'>Send Your Message <i className="far fa-paper-plane"></i></button>
+                        <button type="submit" className = 'submitBtn' onClick = {sayThanks}>Send Your Message <i className="far fa-paper-plane"></i></button>
                     </p>
                 </form>
             </div>
