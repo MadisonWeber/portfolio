@@ -12,7 +12,7 @@ const Contact = () => {
             
             <div className = 'form-container'>
                 <h6>Send me a message right here</h6>
-                <form name="contact" >
+                <form name="contact"  method = 'post'>
                     <input type="hidden" name="form-name" value="contact" />
                     <p>
                         <input type="text" name="name" placeholder = 'Name'/>
