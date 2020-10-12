@@ -27,7 +27,7 @@ const Contact = () => {
                          <textarea name="message" placeholder = "Message.."></textarea>
                     </p>
                     <p>
-                        <button type="submit" className = 'submitBtn' onClick = {sayThanks}>Send Your Message <i className="far fa-paper-plane"></i></button>
+                        <button type="submit" className = 'submitBtn' >Send Your Message <i className="far fa-paper-plane"></i></button>
                     </p>
                 </form>
             </div>
