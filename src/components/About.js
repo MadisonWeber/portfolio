@@ -18,7 +18,8 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about-detail"> 
-                    <p className = 'details-paragraph'> am a Business major who has recently found a strong passion for writing code. I love to learn and constantly strive to get better. I believe im a good communicator, and a fun easy-going person to hang out with. When i began coding, i tried to learn everything i could about machine learning, but have recently found a true passion for front-end web development. I love the feeling of being able to create something i can use and interact with. I am committed to life-long learning in this field, and desire to learn more about UI design. When i'm not writing code i spend most of my time obsessing about my favourite hockey team <img className = 'leafs' src = {require("../photos/leafs-icon.png")} alt = ''/> , or just hanging out with my girlfriend and my dog. </p>
+                    <p className = 'details-paragraph'> am a Business major who has recently found a strong passion for writing code. I love to learn and constantly strive to get better. I believe im a good communicator, and a fun easy-going person to hang out with. When i began coding, i tried to learn everything i could about machine learning, but have recently found a true passion for front-end web development. I love the feeling of being able to create something i can use and interact with. I am committed to life-long learning in this field, and desire to learn more about UI design. When i'm not writing code i spend most of my time obsessing about my favourite hockey team 
+                    <img className = 'leafs' src = {require("../photos/leafs-icon.png")} alt = ''/> , or just hanging out with my girlfriend and my dog. </p>
                 </div>
                 
             </div>
