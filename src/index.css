@@ -1094,7 +1094,7 @@ form{
     }
     .about-upper{
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         flex: .65;
         
     }
@@ -1142,7 +1142,12 @@ form{
     
 }
 
-@media(max-width: 400px){
+@media(max-width: 370px){
+
+    .about-container{
+        height: 140vh;
+    }
+
     .landing-container h1{
         font-size: 3.5rem;
         
