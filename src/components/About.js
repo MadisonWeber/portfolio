@@ -6,7 +6,7 @@ const About = () => {
             <div className = 'about-container'>
                 <div className = 'about-upper'>
                     <div className = 'profile-image-container'>
-                        <img src={require("../photos/me.jpg")} alt="broken"  className = 'profile-image'/>
+                        <img src={require("../photos/newme3.jpg")} alt="broken"  className = 'profile-image'/>
                     </div>
                     <div className ='about-info'>
                         <h1>Madison Weber</h1>
