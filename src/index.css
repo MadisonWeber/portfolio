@@ -1091,7 +1091,9 @@ form{
     .about-container{
         height: 100vh;
         margin-top: 100px;
+        margin-bottom: 100px;
     }
+
     .about-upper{
         flex-direction: column;
         justify-content: space-around;
@@ -1136,9 +1138,13 @@ form{
     height: 24%;
     width: 28%;
 
-}
+    }
     
+    .dial{ 
+    height: 40px;
+    width: 40px;
 
+    }
     
 }
 
