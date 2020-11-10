@@ -1120,6 +1120,10 @@ form{
     .show-skills-button{
         width: 80%;
     }
+
+    .portfolio-card{
+        height: min(660px, 35vh)
+    }
    
 
 }

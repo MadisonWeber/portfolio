@@ -12,6 +12,18 @@ const Portfolio = () => {
             <div className="portfolio-card-holder">
                 <h1>My Recent Work</h1>
                 <div className="portfolio-card">
+                    <img className = 'portfolio-card-image' src={require("../photos/pizzaria1.png")} alt=""/>
+                    <div className="portfolio-info">
+                        <h3 className="project-name">Jimmy's Pizzaria</h3>
+                        <h5 className = "project-type">Front-End Development</h5>
+                    </div>
+                    <div className="portfolio-link-div">
+                        <button className="website-link"><a href="https://jimmys-pizzaria.netlify.app" target="_blank" rel="noopener noreferrer">Go To Project</a></button>
+                        <button className="github-link"><a href="https://github.com/MadisonWeber/jimmys-pizzaria" target="_blank" rel="noopener noreferrer">Github</a></button>
+                    </div>
+                    <p className="portfolio-description">Mock Pizza Website developed with the React framework. Animations done with GSAP ScrollTrigger. Back-End and Authentication powered by firebase. Store's users previous orders and has a working menu. Updates to the menu on the back-end trigger a real-time update on the client. Uses Reacts context-api for state-management. Also has a secondary floating navigation to help traverse the history section.</p>
+                </div>
+                <div className="portfolio-card">
                     <img className = 'portfolio-card-image' src={require("../photos/pokemon-pic.png")} alt=""/>
                     <div className="portfolio-info">
                         <h3 className="project-name">Pokemon App</h3>
@@ -69,7 +81,7 @@ const Portfolio = () => {
                         <button className="website-link" ><a href="https://www.kaggle.com/madison88/top-5-house-price-pred-xgboost-neuralnet-glmnet" target="_blank" rel="noopener noreferrer">Go To Project</a></button>
                         
                     </div>
-                    <p className="portfolio-description">This is a notebook i wrote in R-Markdown, showing the data-wrangling and modelling performed for my submission in the Kaggle competition "House Prices: Advanced Regression Techniques ". At the time, it was in the top 5% of all entries</p>
+                    <p className="portfolio-description">This is a notebook i wrote in R-Markdown, showing the data-wrangling and modelling performed for my submission in the Kaggle competition "House Prices: Advanced Regression Techniques ". At the time, it was in the top 5% of all entries.</p>
                 </div>
                 <div className="portfolio-card">
                     <img className = 'portfolio-card-image' src={require("../photos/data-science2.png")} alt=""/>
