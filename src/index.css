@@ -311,7 +311,7 @@ a{
 
 .profile-image{
     height: auto;
-    width: min(500px, 48vw);
+    width: min(420px, 54vw);
     padding: 6px;
     border: 1.5px solid var(--secondary-text);
     border-radius: 5px;
