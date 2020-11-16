@@ -12,10 +12,23 @@ const Portfolio = () => {
             <div className="portfolio-card-holder">
                 <h1>My Recent Work</h1>
                 <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/pizzaria1.png")} alt=""/>
+                    <img className = 'portfolio-card-image' src={require("../photos/pizzaria1.jpg")} alt=""/>
                     <div className="portfolio-info">
                         <h3 className="project-name">Jimmy's Pizzaria</h3>
                         <h5 className = "project-type">Front-End Development</h5>
+                        <div className="project-tags">
+                            <div className="project-tags-icon">
+                                <i className = 'fas fa-tags'></i>
+                            </div>
+                            <div className="project-tags-tags">
+                                <div className="tag">HTML</div>
+                                <div className="tag">CSS</div>
+                                <div className="tag">Firebase</div>
+                                <div className="tag">React</div>
+                                <div className="tag">GSAP</div>
+                                <div className="tag">Axios</div>
+                            </div>
+                        </div>
                     </div>
                     <div className="portfolio-link-div">
                         <button className="website-link"><a href="https://jimmys-pizzaria.netlify.app" target="_blank" rel="noopener noreferrer">Go To Project</a></button>
@@ -28,6 +41,17 @@ const Portfolio = () => {
                     <div className="portfolio-info">
                         <h3 className="project-name">Pokemon App</h3>
                         <h5 className = "project-type">Front-End Development</h5>
+                        <div className="project-tags">
+                            <div className="project-tags-icon">
+                                <i className = 'fas fa-tags'></i>
+                            </div>
+                            <div className="project-tags-tags">
+                                <div className="tag">HTML</div>
+                                <div className="tag">CSS</div>
+                                <div className="tag">React</div>
+                                <div className="tag">Axios</div>
+                            </div>
+                        </div>
                     </div>
                     <div className="portfolio-link-div">
                         <button className="website-link"><a href="https://madisons-pokemon-app.netlify.app/" target="_blank" rel="noopener noreferrer">Go To Project</a></button>
@@ -36,10 +60,20 @@ const Portfolio = () => {
                     <p className="portfolio-description">Fetching data from the popular PokeApi, i used React to create an App that shows Pokemon attributes, and compare Pokemon stats.</p>
                 </div>
                 <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/enjoi-pic.png")} alt=""/>
+                    <img className = 'portfolio-card-image' src={require("../photos/enjoi-pic.jpg")} alt=""/>
                     <div className="portfolio-info">
                         <h3 className="project-name">Enjoi Website</h3>
                         <h5 className = "project-type">Front-End Development</h5>
+                        <div className="project-tags">
+                            <div className="project-tags-icon">
+                                <i className = 'fas fa-tags'></i>
+                            </div>
+                            <div className="project-tags-tags">
+                                <div className="tag">HTML</div>
+                                <div className="tag">CSS</div>
+                                <div className="tag">Javascript</div>
+                            </div>
+                        </div>
                     </div>
                     <div className="portfolio-link-div">
                         <button className="website-link"><a href="https://enjoi-clone.netlify.app/"  target="_blank" rel="noopener noreferrer">Go To Project</a></button>
@@ -52,6 +86,17 @@ const Portfolio = () => {
                     <div className="portfolio-info">
                         <h3 className="project-name">Movie App</h3>
                         <h5 className = "project-type">Front-End Development</h5>
+                        <div className="project-tags">
+                            <div className="project-tags-icon">
+                                <i className = 'fas fa-tags'></i>
+                            </div>
+                            <div className="project-tags-tags">
+                                <div className="tag">HTML</div>
+                                <div className="tag">CSS</div>
+                                <div className="tag">Javascript</div>
+                                <div className="tag">Local Storeage</div>
+                            </div>
+                        </div>
                     </div>
                     <div className="portfolio-link-div">
                         <button className="website-link"><a href="https://choose-your-movie.netlify.app/"  target="_blank" rel="noopener noreferrer">Go To Project</a></button>
@@ -60,10 +105,20 @@ const Portfolio = () => {
                     <p className="portfolio-description">Using HTML, CSS and Javascript, this app allows users to choose between movies and book their seats. It uses local storage to save and update which seats have already been chosen.</p>
                 </div>
                 <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/adrift-pic.png")} alt=""/>
+                    <img className = 'portfolio-card-image' src={require("../photos/adrift-pic.jpg")} alt=""/>
                     <div className="portfolio-info">
                         <h3 className="project-name">Adrift Website</h3>
                         <h5 className = "project-type">Front-End Development</h5>
+                        <div className="project-tags">
+                            <div className="project-tags-icon">
+                                <i className = 'fas fa-tags'></i>
+                            </div>
+                            <div className="project-tags-tags">
+                                <div className="tag">HTML</div>
+                                <div className="tag">CSS</div>
+                                <div className="tag">Javascript</div>
+                            </div>
+                        </div>
                     </div>
                     <div className="portfolio-link-div">
                         <button className="website-link"><a href="https://adrift-clone.netlify.app/"  target="_blank" rel="noopener noreferrer">Go To Project</a></button>
@@ -76,6 +131,20 @@ const Portfolio = () => {
                     <div className="portfolio-info">
                         <h3 className="project-name">Predicting Housing Prices</h3>
                         <h5 className = "project-type">Data Science</h5>
+                        <div className="project-tags">
+                            <div className="project-tags-icon">
+                                <i className = 'fas fa-tags'></i>
+                            </div>
+                            <div className="project-tags-tags">
+                                <div className="tag">Data Science</div>
+                                <div className="tag">R Programming</div>
+                                <div className="tag">Deep Learning</div>
+                                <div className="tag">Data-Viz</div>
+                                <div className="tag">Data-Wrangling</div>
+                                <div className="tag">XgBoost</div>
+                                <div className="tag">GLMNET</div>
+                            </div>
+                        </div>
                     </div>
                     <div className="portfolio-link-div">
                         <button className="website-link" ><a href="https://www.kaggle.com/madison88/top-5-house-price-pred-xgboost-neuralnet-glmnet" target="_blank" rel="noopener noreferrer">Go To Project</a></button>
@@ -88,6 +157,18 @@ const Portfolio = () => {
                     <div className="portfolio-info">
                         <h3 className="project-name">Modelling NHL Expected Goals</h3>
                         <h5 className = "project-type">Data Science</h5>
+                        <div className="project-tags">
+                            <div className="project-tags-icon">
+                                <i className = 'fas fa-tags'></i>
+                            </div>
+                            <div className="project-tags-tags">
+                                <div className="tag">Data Science</div>
+                                <div className="tag">R Programming</div>
+                                <div className="tag">Data-Viz</div>
+                                <div className="tag">XgBoost</div>
+                                <div className="tag">Caret</div>
+                            </div>
+                        </div>
                     </div>
                     <div className="portfolio-link-div">
                         <button className="website-link"><a href="https://www.kaggle.com/madison88/nhl-expected-goals-model-and-heat-maps"  target="_blank" rel="noopener noreferrer">Go To Project</a></button>
@@ -100,10 +181,21 @@ const Portfolio = () => {
                     <div className="portfolio-info">
                         <h3 className="project-name">Text Analysis of a Wine Quality Dataset</h3>
                         <h5 className = "project-type">Data Science</h5>
+                        <div className="project-tags">
+                            <div className="project-tags-icon">
+                                <i className = 'fas fa-tags'></i>
+                            </div>
+                            <div className="project-tags-tags">
+                                <div className="tag">Data-Science</div>
+                                <div className="tag">R-Programming</div>
+                                <div className="tag">Text-Mining</div>
+                                <div className="tag">Tf-idf</div>
+                                <div className="tag">Data-viz</div>
+                            </div>
+                        </div>
                     </div>
                     <div className="portfolio-link-div">
                         <button className="website-link"><a href="https://www.kaggle.com/madison88/exploring-wines-with-tf-idf"  target="_blank" rel="noopener noreferrer">Go To Project</a></button>
-                        {/* <a href="https://github.com/MadisonWeber/adrift-clone" className="github-link">Github</a> */}
                     </div>
                     <p className="portfolio-description">This is a notebook i wrote in R-Markdown, i analyze and visualize trends in wine, and use text mining techniques to gain insight into how people talk about different wines.</p>
                 </div>

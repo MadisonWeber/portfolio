@@ -305,7 +305,6 @@ a{
     justify-content: center;
     align-items: center;
     flex: .5;
-   
 }
 
 
@@ -400,6 +399,45 @@ a{
     
 }
 
+.portfolio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fa-tags{
+    color: var(--custom-orange);
+}
+
+.project-tags{
+    display: flex;
+}
+
+.project-tags-icon{
+    margin: 6px 4px;
+    
+}
+
+
+.project-tags-tags{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+}
+
+.tag{
+    font-size: 10px;
+    padding: 3px;
+    background-color: rgba(53, 53, 53, 0.3);
+    color: white;
+    border-radius: 6px;
+    margin: 4px;
+    text-transform: uppercase;
+    min-width: 2rem;
+    text-align: center;
+}
+
 .portfolio-card-holder h1{
     padding: 8px 12px;
     color: var(--secondary-text);
@@ -441,13 +479,14 @@ a{
 }
 
 .project-type{
-    color: var(--accent-grey);
+    /* color: var(--accent-grey); */
+    color: rgb(105, 105, 105);
     font-size: 16px;
 }
 
 .portfolio-description{
     width: 50%;
-    font-size: clamp(.7rem, 2.5vw, 1rem);
+    font-size: clamp(.6rem, 2.3vw, .9rem);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -1128,10 +1167,14 @@ form{
 
 }
 
-@media(max-width: 500px){
+@media(max-width : 650px){
     .portfolio-description{
         display: none;
     }
+}
+
+@media(max-width: 500px){
+    
 
     .portfolio-card-image{
         flex-grow: 1;
