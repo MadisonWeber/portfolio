@@ -915,13 +915,13 @@ form{
 }
 
 .dial.r.move{
-    animation: move80 ;
+    animation: move70 ;
     animation-duration: 4s;
     animation-fill-mode: forwards;
 }
 
 .dial.javascript.move{
-    animation: move75 ;
+    animation: move80 ;
     animation-duration: 4s;
     animation-fill-mode: forwards;
 }
@@ -939,7 +939,7 @@ form{
 }
 
 .dial.react.move{
-    animation: move60 ;
+    animation: move75 ;
     animation-duration: 4s;
     animation-fill-mode: forwards;
 }

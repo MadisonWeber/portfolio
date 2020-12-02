@@ -16,7 +16,6 @@ const Skills = () => {
         }
         
     }
-
     
     return (
         <div>
@@ -41,11 +40,11 @@ const Skills = () => {
                     </div>
                     
                     <div className="skills-animation">
-                        <div className="skill r"><div className="dial r" ref = {rRef}></div></div>
                         <div className="skill javascript"><div className="dial javascript" ref = {javascriptRef}></div></div>
-                        <div className="skill html"><div className="dial html" ref = {htmlRef}></div></div>
-                        <div className="skill css"><div className="dial css" ref = {cssRef}></div></div>
                         <div className="skill react"><div className="dial react" ref = {reactRef}></div></div>
+                        <div className="skill css"><div className="dial css" ref = {cssRef}></div></div>
+                        <div className="skill html"><div className="dial html" ref = {htmlRef}></div></div>
+                        <div className="skill r"><div className="dial r" ref = {rRef}></div></div>
                         <div className="skill python"><div className="dial python" ref = {pythonRef}></div></div>
                         <div className = 'skill webscraping'><div className="dial webscraping" ref = {webscrapingRef}></div></div>
                         <span>Ability Level</span>
@@ -54,17 +53,17 @@ const Skills = () => {
                 <div className = 'other-skills'>
                     <h5>Other Skills i have used or am learning</h5>
                     <ul>
+                        <li>Express</li>
                         <li>Git</li>
                         <li>Redux</li>
                         <li>Material UI</li>
                         <li>Sass</li>
-                        <li>SQL</li>
+                        <li>MongoDb</li>
                         <li>Bootstrap</li>
-                        <li>Excel</li>
-                        <li>Tableau</li>
+                        <li>Rest Api's</li>
+                        <li>Styled Components</li>
                         <li>Axios</li>
                         <li>GSAP</li>
-                        <li>Express</li>
                     </ul>
                 </div>
                 
