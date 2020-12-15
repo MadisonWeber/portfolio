@@ -1,234 +1,85 @@
-import React from 'react'
+import React, { useState } from 'react'
+import FlitterCard from './FlitterCard'
+import PokemonCard from './PokemonCard'
+import EnjoiCard from './EnjoiCard'
+import MovieCard from './MovieCard'
+import AdriftCard from './AdriftCard'
+import HousePricesCard from './HousePricesCard'
+import NhlGoalsCard from './NhlGoalsCard'
+import WineQualityCard from './WineQualityCard'
+import EasyBankCard from './EasyBankCard'
+import RoomCard from './RoomCard'
+import { motion } from 'framer-motion'
 
 const Portfolio = () => {
 
+    const SEARCHSTATES = { 
+        ALL : 'ALL',
+        APPS : 'APPS',
+        DATASCIENCE: "DATASCIENCE",
+        LANDINGPAGES: 'LANDINGPAGES'
+    }
 
-  
-     
-
+    const [ searchState, setSearchState ] = useState(SEARCHSTATES.ALL)
 
     return (
-        <div className = 'portfolio-container'>
-            <div className="portfolio-card-holder">
-                <h1>My Recent Work</h1>
-                <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/flitter.jpg")} alt=""/>
-                    <div className="portfolio-info">
-                        <h3 className="project-name">Flitter--MERN Twitter Clone</h3>
-                        <h5 className = "project-type">Full-Stack Development</h5>
-                        <div className="project-tags">
-                            <div className="project-tags-icon">
-                                <i className = 'fas fa-tags'></i>
-                            </div>
-                            <div className="project-tags-tags">
-                                <div className="tag">CSS</div>
-                                <div className="tag">Express</div>
-                                <div className="tag">React</div>
-                                <div className="tag">MongoDB</div>
-                                <div className="tag">MERN</div>
-                                <div className="tag">Dcrypt</div>
-                                <div className="tag">Heroku</div>
-                                <div className="tag">Axios</div>
-                                <div className="tag">Mongoose</div>
-                            </div>
+        <motion.div animate = {{opacity : 1, x : 0 }} initial = {{opacity : 0, x : -80}} transition = {{duration : 0.8}} >
+            <div className = 'portfolio-container'>
+                <div className="portfolio-card-holder">
+                    <div className="portfolio-header-holder">
+                        <h1>My Recent Work</h1>
+                        <div className="portfolio-button-container">
+                            <button className = {searchState === SEARCHSTATES.ALL ? "search-btn all highlighted" : 'search-btn all'} onClick = {()=> setSearchState(SEARCHSTATES.ALL)}>All</button>
+                            <button className = {searchState === SEARCHSTATES.APPS ? "search-btn apps highlighted" : 'search-btn all'} onClick = {()=> setSearchState(SEARCHSTATES.APPS)}>Apps</button>
+                            <button className = {searchState === SEARCHSTATES.DATASCIENCE ? "search-btn datascience highlighted" : 'search-btn all'} onClick = {()=> setSearchState(SEARCHSTATES.DATASCIENCE)}>Data Science</button>
+                            <button className = {searchState === SEARCHSTATES.LANDINGPAGES ? "search-btn landingpages highlighted" : 'search-btn all'} onClick = {()=> setSearchState(SEARCHSTATES.LANDINGPAGES)}>Landing Pages</button>
                         </div>
                     </div>
-                    <div className="portfolio-link-div">
-                        <button className="website-link"><a href="https://flitter.netlify.app/" target="_blank" rel="noopener noreferrer">Go To Project</a></button>
-                        <button className="github-link"><a href="https://github.com/MadisonWeber/flitter--fake-twitter" target="_blank" rel="noopener noreferrer">Github</a></button>
-                    </div>
-                    <p className="portfolio-description">Full Stack MERN twitter clone. Rest-Api written in Express, utilizing a MongoDB database and leveraging mongoose. Password encryption with bcrypt. React Frontend utilizing axios to fetch data. After authorization use can write and post tweets, comment on others tweets and like others tweets. User has follow/unfollow functionality, and the ability to upload a profile picture. Users profile includes ability to upload a profile picture, as well as see all their followers and liked tweets.</p>
-                </div>
-                <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/pizzaria1.jpg")} alt=""/>
-                    <div className="portfolio-info">
-                        <h3 className="project-name">Jimmy's Pizzaria</h3>
-                        <h5 className = "project-type">Front-End Development</h5>
-                        <div className="project-tags">
-                            <div className="project-tags-icon">
-                                <i className = 'fas fa-tags'></i>
-                            </div>
-                            <div className="project-tags-tags">
-                                <div className="tag">HTML</div>
-                                <div className="tag">CSS</div>
-                                <div className="tag">Firebase</div>
-                                <div className="tag">React</div>
-                                <div className="tag">GSAP</div>
-                                <div className="tag">Axios</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="portfolio-link-div">
-                        <button className="website-link"><a href="https://jimmys-pizzaria.netlify.app" target="_blank" rel="noopener noreferrer">Go To Project</a></button>
-                        <button className="github-link"><a href="https://github.com/MadisonWeber/jimmys-pizzaria" target="_blank" rel="noopener noreferrer">Github</a></button>
-                    </div>
-                    <p className="portfolio-description">Mock Pizza Website developed with the React framework. Animations done with GSAP ScrollTrigger. Back-End and Authentication powered by firebase. Store's users previous orders and has a working menu. Updates to the menu on the back-end trigger a real-time update on the client. Uses Reacts context-api for state-management. Also has a secondary floating navigation to help traverse the history section.</p>
-                </div>
-                <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/pokemon-pic.png")} alt=""/>
-                    <div className="portfolio-info">
-                        <h3 className="project-name">Pokemon App</h3>
-                        <h5 className = "project-type">Front-End Development</h5>
-                        <div className="project-tags">
-                            <div className="project-tags-icon">
-                                <i className = 'fas fa-tags'></i>
-                            </div>
-                            <div className="project-tags-tags">
-                                <div className="tag">HTML</div>
-                                <div className="tag">CSS</div>
-                                <div className="tag">React</div>
-                                <div className="tag">Axios</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="portfolio-link-div">
-                        <button className="website-link"><a href="https://madisons-pokemon-app.netlify.app/" target="_blank" rel="noopener noreferrer">Go To Project</a></button>
-                        <button className="github-link"><a href="https://github.com/MadisonWeber/Pokemon-Comparison-App" target="_blank" rel="noopener noreferrer">Github</a></button>
-                    </div>
-                    <p className="portfolio-description">Fetching data from the popular PokeApi, i used React to create an App that shows Pokemon attributes, and compare Pokemon stats.</p>
-                </div>
-                <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/enjoi-pic.jpg")} alt=""/>
-                    <div className="portfolio-info">
-                        <h3 className="project-name">Enjoi Website</h3>
-                        <h5 className = "project-type">Front-End Development</h5>
-                        <div className="project-tags">
-                            <div className="project-tags-icon">
-                                <i className = 'fas fa-tags'></i>
-                            </div>
-                            <div className="project-tags-tags">
-                                <div className="tag">HTML</div>
-                                <div className="tag">CSS</div>
-                                <div className="tag">Javascript</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="portfolio-link-div">
-                        <button className="website-link"><a href="https://enjoi-clone.netlify.app/"  target="_blank" rel="noopener noreferrer">Go To Project</a></button>
-                        <button className="github-link"><a href="https://github.com/MadisonWeber/enjoi_skateboarding"  target="_blank" rel="noopener noreferrer">Github</a></button>
-                    </div>
-                    <p className="portfolio-description">Using HTML, CSS and Javascript, this is a mock website for a popular skateboarding company. It includes a shopping cart and a slideshow.</p>
-                </div>
-                <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/movie-pic2.png")} alt=""/>
-                    <div className="portfolio-info">
-                        <h3 className="project-name">Movie App</h3>
-                        <h5 className = "project-type">Front-End Development</h5>
-                        <div className="project-tags">
-                            <div className="project-tags-icon">
-                                <i className = 'fas fa-tags'></i>
-                            </div>
-                            <div className="project-tags-tags">
-                                <div className="tag">HTML</div>
-                                <div className="tag">CSS</div>
-                                <div className="tag">Javascript</div>
-                                <div className="tag">Local Storeage</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="portfolio-link-div">
-                        <button className="website-link"><a href="https://choose-your-movie.netlify.app/"  target="_blank" rel="noopener noreferrer">Go To Project</a></button>
-                        <button className="github-link"><a href="https://github.com/MadisonWeber/movie-app" target="_blank" rel="noopener noreferrer">Github</a></button>
-                    </div>
-                    <p className="portfolio-description">Using HTML, CSS and Javascript, this app allows users to choose between movies and book their seats. It uses local storage to save and update which seats have already been chosen.</p>
-                </div>
-                <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/adrift-pic.jpg")} alt=""/>
-                    <div className="portfolio-info">
-                        <h3 className="project-name">Adrift Website</h3>
-                        <h5 className = "project-type">Front-End Development</h5>
-                        <div className="project-tags">
-                            <div className="project-tags-icon">
-                                <i className = 'fas fa-tags'></i>
-                            </div>
-                            <div className="project-tags-tags">
-                                <div className="tag">HTML</div>
-                                <div className="tag">CSS</div>
-                                <div className="tag">Javascript</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="portfolio-link-div">
-                        <button className="website-link"><a href="https://adrift-clone.netlify.app/"  target="_blank" rel="noopener noreferrer">Go To Project</a></button>
-                        <button className="github-link"><a href="https://github.com/MadisonWeber/adrift-clone"  target="_blank" rel="noopener noreferrer">Github</a></button>
-                    </div>
-                    <p className="portfolio-description">This was the first website i ever made. Using HTML CSS and Javascript, i cloned Adrift Skateboardings landing page.</p>
-                </div>
-                <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/data-science1.png")} alt=""/>
-                    <div className="portfolio-info">
-                        <h3 className="project-name">Predicting Housing Prices</h3>
-                        <h5 className = "project-type">Data Science</h5>
-                        <div className="project-tags">
-                            <div className="project-tags-icon">
-                                <i className = 'fas fa-tags'></i>
-                            </div>
-                            <div className="project-tags-tags">
-                                <div className="tag">Data Science</div>
-                                <div className="tag">R Programming</div>
-                                <div className="tag">Deep Learning</div>
-                                <div className="tag">Data-Viz</div>
-                                <div className="tag">Data-Wrangling</div>
-                                <div className="tag">XgBoost</div>
-                                <div className="tag">GLMNET</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="portfolio-link-div">
-                        <button className="website-link" ><a href="https://www.kaggle.com/madison88/top-5-house-price-pred-xgboost-neuralnet-glmnet" target="_blank" rel="noopener noreferrer">Go To Project</a></button>
-                        
-                    </div>
-                    <p className="portfolio-description">This is a notebook i wrote in R-Markdown, showing the data-wrangling and modelling performed for my submission in the Kaggle competition "House Prices: Advanced Regression Techniques ". At the time, it was in the top 5% of all entries.</p>
-                </div>
-                <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/data-science2.png")} alt=""/>
-                    <div className="portfolio-info">
-                        <h3 className="project-name">Modelling NHL Expected Goals</h3>
-                        <h5 className = "project-type">Data Science</h5>
-                        <div className="project-tags">
-                            <div className="project-tags-icon">
-                                <i className = 'fas fa-tags'></i>
-                            </div>
-                            <div className="project-tags-tags">
-                                <div className="tag">Data Science</div>
-                                <div className="tag">R Programming</div>
-                                <div className="tag">Data-Viz</div>
-                                <div className="tag">XgBoost</div>
-                                <div className="tag">Caret</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="portfolio-link-div">
-                        <button className="website-link"><a href="https://www.kaggle.com/madison88/nhl-expected-goals-model-and-heat-maps"  target="_blank" rel="noopener noreferrer">Go To Project</a></button>
-                        
-                    </div>
-                    <p className="portfolio-description">This is a notebook i wrote in R-Markdown, it analyzes NHL play-by-play data, visualizes trends, and uses multiple modelling techniques to calculate the probability of any shot in the NHL turning into a goal. </p>
-                </div>
-                <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/data-science3.png")} alt=""/>
-                    <div className="portfolio-info">
-                        <h3 className="project-name">Text Analysis of a Wine Quality Dataset</h3>
-                        <h5 className = "project-type">Data Science</h5>
-                        <div className="project-tags">
-                            <div className="project-tags-icon">
-                                <i className = 'fas fa-tags'></i>
-                            </div>
-                            <div className="project-tags-tags">
-                                <div className="tag">Data-Science</div>
-                                <div className="tag">R-Programming</div>
-                                <div className="tag">Text-Mining</div>
-                                <div className="tag">Tf-idf</div>
-                                <div className="tag">Data-viz</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="portfolio-link-div">
-                        <button className="website-link"><a href="https://www.kaggle.com/madison88/exploring-wines-with-tf-idf"  target="_blank" rel="noopener noreferrer">Go To Project</a></button>
-                    </div>
-                    <p className="portfolio-description">This is a notebook i wrote in R-Markdown, i analyze and visualize trends in wine, and use text mining techniques to gain insight into how people talk about different wines.</p>
+                    {searchState === SEARCHSTATES.ALL && 
+                    <>
+                        <FlitterCard />
+                        <EasyBankCard />
+                        <RoomCard />
+                        <EnjoiCard />
+                        <AdriftCard />
+                        <HousePricesCard />
+                        <PokemonCard />
+                        <NhlGoalsCard />
+                        <WineQualityCard />
+                        <MovieCard />
+                    </>
+                    }
+
+                    {searchState === SEARCHSTATES.APPS &&
+                    <>
+                        <FlitterCard />
+                        <PokemonCard />
+                        <EnjoiCard />
+                        <MovieCard />
+                    </>
+                    }
+                    {searchState === SEARCHSTATES.DATASCIENCE &&
+                    <>
+                        <HousePricesCard />
+                        <NhlGoalsCard />
+                        <WineQualityCard />
+                    </>
+                    }
+                    {searchState === SEARCHSTATES.LANDINGPAGES &&
+                    <>
+                        <EasyBankCard />
+                        <RoomCard />
+                        <AdriftCard />
+                        <EnjoiCard />
+                    </>
+                    }
+
+
                 </div>
             </div>
-        </div>
+
+        </motion.div>
+
     )
 }
 

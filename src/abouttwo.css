@@ -1,0 +1,146 @@
+.about__two__container{
+    margin: 16vh auto;
+    border: 2px solid var(--secondary-text);
+    width: min(80%, 780px );
+    box-shadow: 0px 0px 10px 20px rgba(53, 53, 53, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.about__two__panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+
+.about__two__container > h1{
+    font-size: 4rem;
+    display: inline;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.about__two__top{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    flex: .5;
+}
+
+.about__two__contact{
+
+   flex-basis: 60%;
+   text-align: center;
+   font-family: 'Roboto Slab', serif;
+  
+}
+
+.about__two__contact > *{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 14px;
+    white-space: nowrap;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+}
+
+.about__two__question{
+    font-size: 20px;
+    color: var(--secondary-text);
+    font-weight: 300;
+    font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.avatar{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__two__photo{
+    height: 220px;
+    object-fit: cover;
+}
+
+.about__two__bottom{
+    flex: .5;
+    flex-grow: 1;
+}
+
+
+.about__two__bottom >h4{
+    font-size: 26px;
+    padding-left: 5px;
+}
+
+.details-paragraph-bottom{
+    line-height: 1.4;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    padding: 0px 16px;
+    color: black;
+}
+
+.details-paragraph-bottom:before{
+    margin-left: 5px;
+    content : 'I';
+    line-height: 1.4;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+.about-me-two{
+    margin: 20px 0;
+}
+
+@media(max-width: 800px){
+    .about__two__container{
+        width: 95%;
+    }
+}
+
+@media(max-width: 700px){
+    .about__two__container{
+        text-align: center;
+
+    }
+
+    .about__two__top{
+        flex-direction: column;
+    }
+    
+    .avatar{
+        margin-bottom: 30px;
+    }
+
+    .about-me-two{
+        margin: 35px 0;
+    }
+}
+
+
+
+@media(max-width : 450px){
+    .about__two__question{
+        font-size: 14px;
+    }
+
+    .about__two__contact > p{
+        font-size: 16px;
+    }
+
+    .details-paragraph-bottom{
+        font-size: 14px;
+    }
+}

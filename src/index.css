@@ -1,7 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700&display=swap');
 
 
 :root {
@@ -106,11 +106,9 @@ a{
     align-items: center;
     justify-content: center;
     filter: contrast(105%);
-   
-    
 }
 
-.landing-container h1{
+.landing-name{
     font-size: 6rem;
     letter-spacing: 8px;
     font-family: 'Kaushan Script', cursive;
@@ -119,8 +117,14 @@ a{
     opacity: 0;
     animation: openingAnimation .85s linear 2.5s 1 forwards;
     z-index: 10;
-    
 }
+
+.landing-name.dont-run{
+    animation: none;
+    opacity: 1;
+}
+
+
 
 @keyframes moveName {
     0%{
@@ -161,8 +165,12 @@ a{
     height: 100%;
     width: 100%;
     animation: moveContainer .6s linear 2s 1 forwards;
-    
 }
+
+.landing-text-container.dont-show{
+    display: none;
+}
+
 
 .landing-text-container h1{
     color: white;
@@ -190,20 +198,25 @@ a{
 }
 
 
-.landing-container p{
-  
+.landing__p{
     color: rgb(189, 188, 188);
     font-size: 22px;
     text-shadow: 2px 2px black;
     text-transform: capitalize;
     font-family: 'Roboto Slab', serif;
-    opacity: 0;
+    opacity: 1;
     filter: contrast(150%);
-    animation: openingAnimation 1.3s linear 3s 1 forwards;
     text-align: center;
     text-shadow: 1px 1px rgba(53, 53, 53, 0.8);
     position: relative;
 }
+
+.landing__p.run-p{
+    animation: openingAnimation 1.3s linear 3s 1 forwards;
+    opacity: 0;
+}
+
+
 
 .landing-container p::after{
     content: " ";
@@ -225,6 +238,10 @@ a{
     transform: translateY(100%);
     background-color: var(--secondary-text);
     animation: moveSlider .6s linear 1.8s 1 forwards;
+}
+
+.landing-slider.dont-show{
+    display: none;
 }
 
 
@@ -268,6 +285,7 @@ a{
 }
 
 
+/* About */
 
 .about{
     min-height: 110vh;
@@ -366,7 +384,7 @@ a{
 
 .details-paragraph{
     font-size: min(15px, 2vw);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     border-bottom: 1.5px solid var(--accent-grey);
     border-top: 1.5px solid var(--accent-grey);
@@ -396,8 +414,36 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+
     
 }
+.portfolio-header-holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio-button-container{
+    /* border: 2px solid purple; */
+
+}
+
+.search-btn{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    padding: 10px 20px;
+    outline-width: 0;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(53, 53, 53, 0.8);
+    cursor: pointer;
+}
+
+.search-btn.highlighted{
+    background-color: var(--custom-orange);
+}
+
 
 .portfolio-info{
     display: flex;
@@ -444,7 +490,7 @@ a{
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
     margin-bottom: 3rem;
-    
+    white-space: nowrap;
 }
 
 .portfolio-card-holder{
@@ -460,6 +506,15 @@ a{
     border-radius: 10px;
 }
 
+@keyframes opacityIn {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
 .portfolio-card{
     display: flex;
     position: relative;
@@ -471,6 +526,7 @@ a{
     box-shadow: 5px 5px 10px 10px rgba(105, 105, 105, .2);
     border-radius: 4px;
     margin-bottom: 2.5rem;
+    animation: opacityIn 250ms ease-in-out;
 }
 
 .project-name{
@@ -479,7 +535,6 @@ a{
 }
 
 .project-type{
-    /* color: var(--accent-grey); */
     color: rgb(105, 105, 105);
     font-size: 16px;
 }
@@ -1036,6 +1091,7 @@ form{
     outline:none;
     opacity: 1;
     transition: opacity 700ms ease-in;
+    cursor: pointer;
     
 }
 
@@ -1105,6 +1161,7 @@ form{
     background-color: transparent;
     border: none;
     outline:none;
+    cursor: pointer;
     color: var(--custom-orange);
     font-size: 2rem;
     transition: transform 400ms ease-in-out;
@@ -1131,6 +1188,10 @@ form{
         height: 100vh;
         margin-top: 100px;
         margin-bottom: 100px;
+    }
+
+    .portfolio-button-container{
+        display: none;
     }
 
     .about-upper{
