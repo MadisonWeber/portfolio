@@ -12,7 +12,7 @@ const AboutTwo = () => {
                 <div className = 'about__two__panel'>
                     <div className="about__two__top">
                         <div className="avatar" style = {{'width' : '250px', 'height' : '250px'}}>
-                            <img src={aboutphoto} alt="my photo" className = 'about__two__photo' />
+                            <img src={aboutphoto} alt="a picture of me" className = 'about__two__photo' />
                         </div>
                         <div className = 'about__two__contact'>
                             <p><span className = 'about__two__question'>Education:</span> University Of Guelph</p>
