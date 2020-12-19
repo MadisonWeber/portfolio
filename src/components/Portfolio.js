@@ -9,6 +9,7 @@ import NhlGoalsCard from './NhlGoalsCard'
 import WineQualityCard from './WineQualityCard'
 import EasyBankCard from './EasyBankCard'
 import RoomCard from './RoomCard'
+import BookmarkCard from './BookmarkCard'
 import { motion } from 'framer-motion'
 
 const Portfolio = () => {
@@ -39,6 +40,7 @@ const Portfolio = () => {
                     <>
                         <FlitterCard />
                         <EasyBankCard />
+                        <BookmarkCard />
                         <RoomCard />
                         <EnjoiCard />
                         <AdriftCard />
@@ -68,6 +70,7 @@ const Portfolio = () => {
                     {searchState === SEARCHSTATES.LANDINGPAGES &&
                     <>
                         <EasyBankCard />
+                        <BookmarkCard />
                         <RoomCard />
                         <AdriftCard />
                         <EnjoiCard />
