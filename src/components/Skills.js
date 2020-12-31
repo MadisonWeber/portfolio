@@ -53,7 +53,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className = 'other-skills'>
-                        <h5>Other Skills i have used or am learning</h5>
+                        <h5>Other Tech i have used or am learning</h5>
                         <ul>
                             <li>Express</li>
                             <li>Git</li>
@@ -71,6 +71,7 @@ const Skills = () => {
                     
                 </div>
             </div>
+       
         </motion.div>
     )
 }

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+.landing__two{
+    margin-top: 10vh;
+    height: 90vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+
+.landing__two__inner{
+    position: relative;
+    margin: auto;
+    width: 88%;
+    height: 90%;
+    text-align: center;
+}
+
+.landing__two__inner img{
+    opacity: 0;
+    object-fit: cover;
+    cursor: pointer;
+    height: 100%;
+    filter: grayscale(100);
+    transition: filter 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: opacityIn 800ms ease-out 600ms forwards;
+}
+
+.landing__two__inner img:hover{
+    filter: grayscale(0%);
+}
+
+.landing__two__overlay{
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.landing__two__overlay-bg{
+    min-height: 2.2rem;
+    min-width: 5rem;
+    background-color: black;
+    width: 86%;
+    height: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+    overflow: hidden;
+}
+
+
+.landing__two__front,
+.landing__two__name{
+    color: var(--custom-orange);
+    font-size: min(7rem, 7vw);
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    flex: .5;
+    white-space: nowrap;
+}
+
+
+.landing__two__name{
+    animation: opacityIn 200ms ease-in;
+}
+
+
+
+.landing__two__front{
+    color: white;
+    transform: translateX(-200%);
+    animation: slideFrontIn 500ms cubic-bezier(.08,.67,.81,1.05) forwards;
+}
+
+@keyframes slideFrontIn{
+    from{
+        transform: translateX(-200%);
+    }to{
+        transform: translateX(0%);
+    }
+}
+
+@media(max-width : 800px){
+    .landing-image-three,
+    .landing-image-one{
+        display: none;
+    }
+
+    
+    .landing-image-two{
+        width: 100% !important;
+    }
+}

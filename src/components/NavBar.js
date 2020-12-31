@@ -49,10 +49,8 @@ const NavBar = () => {
             }
         }
 
-
         if( hamburgerOpen ){
             window.addEventListener('click', checkForClickAway)
-            
         }
 
         return ()=> window.removeEventListener('click', checkForClickAway)
@@ -73,20 +71,13 @@ const NavBar = () => {
        
     }
 
-
-
-    
     const location = useLocation()
-    
-    
-    
-
     
     return (
         <div className = 'nav-container' style = { location.pathname === "/" || location.pathname === "/contact" ? {backgroundColor : 'transparent'} : {backgroundColor : 'white'}}>
             <nav >
                 <div className = 'nav-links'>
-                    <div className = 'logo-container' >
+                    <div className = 'logo-container' style = {location.pathname === "/" ? {backgroundColor : 'rgb(247, 139, 76)'} : {backgroundColor : "rgb(105, 105, 105)"}} >
                         <NavLink to = '/' className = 'back-home'> <p>MW</p> </NavLink>
                     </div>
                     <div className =  'link-container' >

@@ -2,6 +2,8 @@ import React from 'react'
 import '../abouttwo.css'
 import aboutphoto from '../photos/newme-op.jpg';
 import { motion } from 'framer-motion';
+import FloatingIcons from '../components/FloatingIcons'
+
 
 
 const AboutTwo = () => {
@@ -28,6 +30,8 @@ const AboutTwo = () => {
                             <img className = 'leafs' src = {require("../photos/leafs-icon.png")} alt = ''/> , or just hanging out with my girlfriend and my dog. </p>
                     </div>
                 </div>
+                <h4 className = 'fav-tech'>My Favourite Tech</h4>
+                <FloatingIcons />
             </div>
         </motion.div>
     )
