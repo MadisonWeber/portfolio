@@ -3,7 +3,7 @@ import React from 'react'
 const EnjoiCard = () => {
     return (
             <div className="portfolio-card">
-                <img className = 'portfolio-card-image' src={require("../photos/enjoi-pic.jpg")} alt=""/>
+                <img className = 'portfolio-card-image' src={require("../../photos/enjoi-pic.jpg")} alt=""/>
                 <div className="portfolio-info">
                     <h3 className="project-name">Enjoi Website</h3>
                     <h5 className = "project-type">Front-End Development</h5>

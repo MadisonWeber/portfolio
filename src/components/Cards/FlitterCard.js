@@ -3,7 +3,7 @@ import React from 'react'
 const FlitterCard = () => {
     return (
         <div className="portfolio-card">
-                    <img className = 'portfolio-card-image' src={require("../photos/flitter.jpg")} alt=""/>
+                    <img className = 'portfolio-card-image' src={require("../../photos/flitter.jpg")} alt=""/>
                     <div className="portfolio-info">
                         <h3 className="project-name">Flitter--MERN Twitter Clone</h3>
                         <h5 className = "project-type">Full-Stack Development</h5>

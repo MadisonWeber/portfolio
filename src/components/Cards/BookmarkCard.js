@@ -3,7 +3,7 @@ import React from 'react'
 const BookmarkCard = () => {
     return (
         <div className="portfolio-card">
-            <img className = 'portfolio-card-image' src={require("../photos/bookmark_op.jpg")} alt=""/>
+            <img className = 'portfolio-card-image' src={require("../../photos/bookmark_op.jpg")} alt=""/>
             <div className="portfolio-info">
                 <h3 className="project-name">Bookmark Landing Page</h3>
                 <h5 className = "project-type">Frontend Development</h5>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "../LandingTwo.css"
+import "../css/LandingTwo.css"
 import PossibleOne from '../photos/plexels__one.jpg'
 import PossibleTwo from '../photos/plexels__two.jpg'
 import PossibleThree from '../photos/plexels__three.jpg'

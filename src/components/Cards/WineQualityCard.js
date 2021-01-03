@@ -3,7 +3,7 @@ import React from 'react'
 const WineQualityCard = () => {
     return (
         <div className="portfolio-card">
-            <img className = 'portfolio-card-image' src={require("../photos/data-science3.png")} alt=""/>
+            <img className = 'portfolio-card-image' src={require("../../photos/data-science3.png")} alt=""/>
             <div className="portfolio-info">
                 <h3 className="project-name">Text Analysis of a Wine Quality Dataset</h3>
                 <h5 className = "project-type">Data Science</h5>

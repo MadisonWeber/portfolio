@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
-import FlitterCard from './FlitterCard'
-import PokemonCard from './PokemonCard'
-import EnjoiCard from './EnjoiCard'
-import MovieCard from './MovieCard'
-import AdriftCard from './AdriftCard'
-import HousePricesCard from './HousePricesCard'
-import NhlGoalsCard from './NhlGoalsCard'
-import WineQualityCard from './WineQualityCard'
-import EasyBankCard from './EasyBankCard'
-import RoomCard from './RoomCard'
-import BookmarkCard from './BookmarkCard'
+import FlitterCard from './Cards/FlitterCard'
+import PokemonCard from './Cards/PokemonCard'
+import EnjoiCard from './Cards/EnjoiCard'
+import MovieCard from './Cards/MovieCard'
+import AdriftCard from './Cards/AdriftCard'
+import HousePricesCard from './Cards/HousePricesCard'
+import NhlGoalsCard from './Cards/NhlGoalsCard'
+import WineQualityCard from './Cards/WineQualityCard'
+import EasyBankCard from './Cards/EasyBankCard'
+import RoomCard from './Cards/RoomCard'
+import BookmarkCard from './Cards/BookmarkCard'
+import HuddleCard from './Cards/HuddleCard'
 import { motion } from 'framer-motion'
+import "../css/portfolio.css"
 
 const Portfolio = () => {
 
@@ -43,6 +45,7 @@ const Portfolio = () => {
                         <BookmarkCard />
                         <RoomCard />
                         <EnjoiCard />
+                        <HuddleCard />
                         <AdriftCard />
                         <HousePricesCard />
                         <PokemonCard />
@@ -72,6 +75,7 @@ const Portfolio = () => {
                         <EasyBankCard />
                         <BookmarkCard />
                         <RoomCard />
+                        <HuddleCard />
                         <AdriftCard />
                         <EnjoiCard />
                     </>

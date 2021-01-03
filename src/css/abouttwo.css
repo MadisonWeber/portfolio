@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat&display=swap');
 
 .about__two__container{
     margin: 16vh auto;
@@ -23,10 +22,7 @@
     font-size: 4.3rem;
     display: inline;
     font-family: 'Roboto', sans-serif;
-   
-
 }
-
 
 
 .about__two__top{
@@ -52,7 +48,6 @@
     white-space: nowrap;
     font-weight: 500;
     font-family: 'Roboto Slab', serif;
-    /* font-family: 'Josefin Sans', sans-serif; */
 }
 
 .about__two__question{
@@ -116,6 +111,11 @@
     letter-spacing: 1px;
     font-family: 'Josefin Sans', sans-serif;
 }
+
+.leafs{
+    height: 1rem;
+    width: auto;
+} 
 
 @media(max-width: 800px){
     .about__two__container{

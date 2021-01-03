@@ -1,0 +1,353 @@
+/* Skills */
+
+.skills-info{
+    padding: 10px;
+}
+
+.skills-info p{
+    margin: 1rem 0;
+    font-size: 18px;
+    
+}
+
+.skills-info h3{
+    font-size: 36px;
+    font-family: "Roboto slab";
+    color: var(--secondary-text);
+}
+
+
+.skills-container{
+    margin: 14vh 4rem;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.skills-animation-container{
+    box-shadow: 10px 10px 10px 10px rgba(105, 105, 105, .15);
+    min-height: 55vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 12px;
+    
+}
+
+.skills-levels{
+    
+    width: 80%;
+    height: 2px;
+    margin: auto;
+    margin-top: 2.4rem;
+    position: relative;
+    
+}
+
+.skills-animation{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding: 10px;
+  
+}
+
+
+.dial{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--custom-orange);
+    transform: translateY(-50%) translateX(-25%);
+    position: absolute;
+    left: 0%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.skill{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: min(13px, 1.8vw);
+    font-weight: 750;
+    color: var(--secondary-text);
+   
+}
+
+.level{
+    position: absolute;
+    top: -20px;
+    font-size: min(20px, 2vw);
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--secondary-text);
+    
+}
+
+
+
+.show-skills-button{
+    margin-bottom: 3.5rem;
+    height: 2.5rem;
+    padding: 1rem;
+    width: 50%;
+    background-color: var(--custom-purple);
+    border: none;
+    border-radius: 10px;
+    font-size: min(1.4rem, 2vw);
+    vertical-align:middle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    line-height: .5rem;
+    outline:none; 
+}
+
+.show-skills-button:active{
+    background-color: rgba(161, 151, 255, .8);
+    transform: scale(1.01);
+}
+
+.skill.r::before{
+    content: 'R Programming';
+    position: absolute;
+    transform: rotate(-25deg) translateX(-5px) translateY(-10px);
+    left: -12%;
+    
+}
+
+.skill.javascript::before{
+    content: 'Javascript';
+    position: absolute;
+    transform: rotate(-25deg) translateX(-18px);
+    left: -10%;
+}
+
+.skill.python::before{
+    content: 'Python';
+    position: absolute;
+    transform: rotate(-25deg) translateX(10px);
+    left: -10%;
+}
+
+.skill.webscraping::before{
+    content: 'Web Scraping';
+    position: absolute;
+    transform: rotate(-25deg) translateX(5px) translateY(-8px);
+    left: -13%;
+    z-index: -1;
+ 
+}
+
+.skill.html::before{
+    content: 'Html';
+    position: absolute;
+    transform: rotate(-25deg) translateX(10px);
+    left: -10%;
+}
+
+.skill.css::before{
+    content: 'Css';
+    position: absolute;
+    transform: rotate(-25deg) translateX(10px);
+    left: -10%;
+}
+
+.skill.react::before{
+    content: 'React';
+    position: absolute;
+    transform: rotate(-25deg) translateX(10px);
+    left: -10%;
+}
+
+.skills-animation > span{
+    align-self: center;
+    color: var(--secondary-text);
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* My Keyframes */
+@keyframes move80{
+    from{
+        left: 0;
+
+    }to {
+        left: 75%;
+}
+}
+
+@keyframes move75{
+    from{
+        left: 0;
+
+    }to {
+        left: 70%;
+
+       
+    }
+}
+
+
+@keyframes move70{
+    from{
+        left: 0;
+
+    }to {
+        left: 65%;
+
+    }
+}
+
+@keyframes move60{
+    from{
+        left: 0;
+
+    }to {
+        left: 55%;
+    }
+
+}
+
+
+@keyframes move50{
+    from {
+        left: 0;
+
+    }to{
+        left: 45%;
+
+    }          
+}
+
+@keyframes move45{
+    from {
+        left: 0; 
+    }to{
+        left: 40%;
+    }          
+}
+
+.dial.r.move{
+    animation: move70 ;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.dial.javascript.move{
+    animation: move80 ;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.dial.html.move{
+    animation: move70 ;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.dial.css.move{
+    animation: move70 ;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.dial.react.move{
+    animation: move75 ;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.dial.python.move{
+    animation: move50 ;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.dial.webscraping.move{
+    animation: move45 ;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.one{
+    left: 5%;
+}
+
+
+
+.two{
+    left: 15%;
+}
+
+.three{
+    left: 25%;
+}
+
+.four{
+    left: 35%;
+}
+
+.five{
+    left: 45%;
+}
+
+.six{
+    left: 55%;
+}
+
+.seven{
+    left: 65%;
+}
+
+.eight{
+    left: 75%;
+}
+
+.nine{
+    left: 85%;
+}
+
+.ten{
+    left: 95%;
+}
+
+.other-skills{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    box-shadow: 10px 10px 10px 10px rgba(105, 105, 105, .15);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.other-skills h5{
+    margin-right: 50px;
+    font-size: min(20px, 2vh);
+    text-transform: capitalize;
+    font-family: "Roboto Slab";
+    color: var(--secondary-text);
+}
+
+.other-skills ul{
+    list-style: none;
+    border-left: 2px solid var(--custom-orange);
+    padding-left: 50px;
+    font-style: italic;
+    font-size: min(18px, 3vw );
+}

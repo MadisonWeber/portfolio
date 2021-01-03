@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import Hamburger from './Hamburger'
 import { useLocation } from 'react-router-dom';
+import "../css/nav.css"
 
 
 const NavBar = () => {
@@ -9,9 +10,6 @@ const NavBar = () => {
     
     const [ useHamburger, setUseHamburger ] = useState(false)
     const [ hamburgerOpen, setHamburgerOpen ] = useState(false)
-    
-
-   
 
     const handleResize= ()=> {
         const size =  window.innerWidth
@@ -74,7 +72,7 @@ const NavBar = () => {
     const location = useLocation()
     
     return (
-        <div className = 'nav-container' style = { location.pathname === "/" || location.pathname === "/contact" ? {backgroundColor : 'transparent'} : {backgroundColor : 'white'}}>
+        <div className = 'nav-container' style = { location.pathname === "/" || location.pathname === "/contact"  ? {backgroundColor : 'transparent'} : {backgroundColor : 'white'}}>
             <nav >
                 <div className = 'nav-links'>
                     <div className = 'logo-container' style = {location.pathname === "/" ? {backgroundColor : 'rgb(247, 139, 76)'} : {backgroundColor : "rgb(105, 105, 105)"}} >
@@ -85,9 +83,7 @@ const NavBar = () => {
                         <NavLink to="/portfolio" activeClassName="currentPage" > Portfolio</NavLink>
                         <NavLink to="/skills" activeClassName="currentPage" > Skills</NavLink>
                         <NavLink to="/contact" activeClassName="currentPage"> Contact</NavLink> </>) }
-                        
                     </div>
-                    
                 </div>
         
             </nav>

@@ -1,5 +1,6 @@
 import React, {useRef} from 'react'
 import { motion } from 'framer-motion';
+import "../css/skills.css"
 
 const Skills = () => {
     const rRef = useRef(null)

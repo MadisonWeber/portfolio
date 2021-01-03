@@ -3,7 +3,7 @@ import React from 'react'
 const PokemonCard = () => {
     return (
             <div className="portfolio-card">
-                <img className = 'portfolio-card-image' src={require("../photos/pokemon-pic.png")} alt=""/>
+                <img className = 'portfolio-card-image' src={require("../../photos/pokemon-pic.png")} alt=""/>
                 <div className="portfolio-info">
                     <h3 className="project-name">Pokemon App</h3>
                     <h5 className = "project-type">Front-End Development</h5>

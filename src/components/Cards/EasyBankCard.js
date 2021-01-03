@@ -3,7 +3,7 @@ import React from 'react'
 const EasyBankCard = () => {
     return (
         <div className="portfolio-card">
-            <img className = 'portfolio-card-image' src={require("../photos/easybank-optimized.jpg")} alt=""/>
+            <img className = 'portfolio-card-image' src={require("../../photos/easybank-optimized.jpg")} alt=""/>
             <div className="portfolio-info">
                 <h3 className="project-name">EasyBank Landing Page</h3>
                 <h5 className = "project-type">Frontend Development</h5>

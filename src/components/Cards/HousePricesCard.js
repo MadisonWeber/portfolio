@@ -3,7 +3,7 @@ import React from 'react'
 const HousePricesCard = () => {
     return (
             <div className="portfolio-card">
-                <img className = 'portfolio-card-image' src={require("../photos/data-science1.png")} alt=""/>
+                <img className = 'portfolio-card-image' src={require("../../photos/data-science1.png")} alt=""/>
                 <div className="portfolio-info">
                     <h3 className="project-name">Predicting Housing Prices</h3>
                     <h5 className = "project-type">Data Science</h5>

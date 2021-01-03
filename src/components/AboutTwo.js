@@ -1,5 +1,5 @@
 import React from 'react'
-import '../abouttwo.css'
+import '../css/abouttwo.css'
 import aboutphoto from '../photos/newme-op.jpg';
 import { motion } from 'framer-motion';
 import FloatingIcons from '../components/FloatingIcons'

@@ -3,7 +3,7 @@ import React from 'react'
 const AdriftCard = () => {
     return (
             <div className="portfolio-card">
-                <img className = 'portfolio-card-image' src={require("../photos/adrift-pic.jpg")} alt=""/>
+                <img className = 'portfolio-card-image' src={require("../../photos/adrift-pic.jpg")} alt=""/>
                 <div className="portfolio-info">
                     <h3 className="project-name">Adrift Website</h3>
                     <h5 className = "project-type">Front-End Development</h5>

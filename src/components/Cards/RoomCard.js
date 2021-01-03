@@ -3,7 +3,7 @@ import React from 'react'
 const RoomCard = () => {
     return (
         <div className="portfolio-card">
-            <img className = 'portfolio-card-image' src={require("../photos/room-optimized.jpg")} alt=""/>
+            <img className = 'portfolio-card-image' src={require("../../photos/room-optimized.jpg")} alt=""/>
             <div className="portfolio-info">
                 <h3 className="project-name">Room Landing Page</h3>
                 <h5 className = "project-type">Frontend Development</h5>
