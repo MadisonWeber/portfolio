@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FlitterCard from './Cards/FlitterCard'
 import PokemonCard from './Cards/PokemonCard'
+import JimmysCard from './Cards/JimmysCard'
 import EnjoiCard from './Cards/EnjoiCard'
 import MovieCard from './Cards/MovieCard'
 import AdriftCard from './Cards/AdriftCard'
@@ -41,6 +42,7 @@ const Portfolio = () => {
                     {searchState === SEARCHSTATES.ALL && 
                     <>
                         <FlitterCard />
+                        <JimmysCard/>
                         <EasyBankCard />
                         <BookmarkCard />
                         <RoomCard />
@@ -58,6 +60,7 @@ const Portfolio = () => {
                     {searchState === SEARCHSTATES.APPS &&
                     <>
                         <FlitterCard />
+                        <JimmysCard/>
                         <PokemonCard />
                         <EnjoiCard />
                         <MovieCard />
