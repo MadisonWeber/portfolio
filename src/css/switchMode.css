@@ -34,7 +34,6 @@
     border: 1px solid black;
     outline: none;
     cursor: pointer;
-    transition: left 300ms ease-in-out;
 }
 
 .switch_btn.lightmode{

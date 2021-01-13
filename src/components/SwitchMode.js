@@ -7,7 +7,7 @@ const SwitchMode = () => {
     const [mode, setMode ] = useState('')
 
     useEffect(()=> {
-        const current = JSON.parse(localStorage.getItem('MODE'))
+        const current = JSON.parse(localStorage.getItem('MODE')) || 'lightmode'
         setMode(current)
         if(current === "darkmode"){
             console.log('current is dark')
