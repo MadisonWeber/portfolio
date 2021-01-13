@@ -43,13 +43,12 @@
 
 .logo-container > a > p{
     font-family: 'Kaushan Script', cursive;
-
 }
 
 
 .nav-container a{
     margin: 0 1.8rem;
-    color: black;
+    color: var(--main-text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.15rem;
     cursor: pointer;

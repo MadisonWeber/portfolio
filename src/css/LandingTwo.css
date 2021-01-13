@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 
 .landing__two{
     margin-top: 10vh;
     height: 90vh;
-    background: white;
+    background: var(--background-color);
     display: flex;
     align-items: center;
     justify-content: center;

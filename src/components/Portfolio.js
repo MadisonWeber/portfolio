@@ -13,6 +13,7 @@ import RoomCard from './Cards/RoomCard'
 import BookmarkCard from './Cards/BookmarkCard'
 import HuddleCard from './Cards/HuddleCard'
 import { motion } from 'framer-motion'
+import SwitchMode from './SwitchMode'
 import "../css/portfolio.css"
 
 const Portfolio = () => {
@@ -87,7 +88,7 @@ const Portfolio = () => {
 
                 </div>
             </div>
-
+            <SwitchMode />
         </motion.div>
 
     )

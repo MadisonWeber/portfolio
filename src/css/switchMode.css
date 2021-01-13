@@ -1,0 +1,50 @@
+.switch__container{
+    border: 2px solid rgba(100, 100, 100, .5);
+    width: 70px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.fa-sun{
+    font-size: 22px;
+    color: rgb(243, 208, 92);
+    display: inline;
+}
+
+.fa-moon{
+    font-size: 20px;
+    color: #1da1f2;
+    display: inline;
+}
+
+
+.switch_btn{
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    transition: left 300ms ease-in-out;
+}
+
+.switch_btn.lightmode{
+    background:  radial-gradient(white, var(--switcher-color));
+    right: -10%;
+    top: -10%;
+}
+
+.switch_btn.darkmode{
+    background: radial-gradient(darkslategray, black);
+    left: -10%;
+    border: 2px solid #1da1f2;;
+}

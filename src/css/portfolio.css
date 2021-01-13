@@ -103,16 +103,17 @@
     justify-content: space-around;
     min-height: 280px;
     padding: 5px;
-    box-shadow: 5px 5px 10px 10px rgba(105, 105, 105, .2);
+    box-shadow: var(--box-shadow-two);
     border-radius: 4px;
     margin-bottom: 2.5rem;
     animation: opacityIn 250ms ease-in-out;
-  
+    background-color: var(--background-color-second);
 }
 
 .project-name{
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
+    color: var(--main-text-color);
 }
 
 .project-type{
@@ -126,6 +127,7 @@
     font-size: clamp(.6rem, 1.9vw, .9rem);
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
+    color: var(--main-text-color);
 }
 
 

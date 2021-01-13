@@ -25,6 +25,7 @@ function App() {
                 <Route path = '/contact' component = {Contact} />
                 <Route path = '/LandingTwo' component = {LandingTwo} />
                 <Route component = {Error} />
+             
               </Switch>
             </AnimatePresence>
 

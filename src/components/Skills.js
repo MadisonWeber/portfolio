@@ -1,6 +1,7 @@
 import React, {useRef} from 'react'
 import { motion } from 'framer-motion';
 import "../css/skills.css"
+import SwitchMode from './SwitchMode'
 
 const Skills = () => {
     const rRef = useRef(null)
@@ -27,7 +28,7 @@ const Skills = () => {
                         <h3>My Skills</h3>
                         <p>This is an honest evaluation of where my skill level currently is across multiple technologies. <br/> I will keep this up to date as i continue progressing.</p>
                     </div>
-                    <button onClick = {addMoveClass} className = 'show-skills-button'>Click To See How I Rate My Skills</button>
+                    <button onClick = {addMoveClass} className = 'show-skills-button'>See My Skills</button>
                     <div className="skills-animation-container">
                         <div className = 'skills-levels'>
                             <span className = 'level one'>1</span>
@@ -72,6 +73,7 @@ const Skills = () => {
                     
                 </div>
             </div>
+            <SwitchMode />
        
         </motion.div>
     )

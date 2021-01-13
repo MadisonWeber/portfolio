@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import "../css/contact.css"
+import SwitchMode from './SwitchMode'
 
 const Contact = () => {
 
@@ -35,6 +36,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
+            <SwitchMode />
         </motion.div>
     )
 }

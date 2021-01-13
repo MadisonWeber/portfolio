@@ -3,6 +3,7 @@ import '../css/abouttwo.css'
 import aboutphoto from '../photos/newme-op.jpg';
 import { motion } from 'framer-motion';
 import FloatingIcons from '../components/FloatingIcons'
+import SwitchMode from './SwitchMode'
 
 
 
@@ -33,6 +34,7 @@ const AboutTwo = () => {
                 <h4 className = 'fav-tech'>My Favourite Tech</h4>
                 <FloatingIcons />
             </div>
+            <SwitchMode />
         </motion.div>
     )
 }

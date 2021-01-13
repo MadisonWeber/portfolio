@@ -1,5 +1,16 @@
 /* Skills */
 
+
+.skills-container{
+    margin: 14vh auto;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+    max-width: 1300px;
+
+}
+
 .skills-info{
     padding: 10px;
 }
@@ -7,6 +18,7 @@
 .skills-info p{
     margin: 1rem 0;
     font-size: 18px;
+    color: var(--main-text-color);
     
 }
 
@@ -16,23 +28,15 @@
     color: var(--secondary-text);
 }
 
-
-.skills-container{
-    margin: 14vh 4rem;   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
-}
-
 .skills-animation-container{
-    box-shadow: 10px 10px 10px 10px rgba(105, 105, 105, .15);
+    box-shadow: var(--box-shadow-two);
     min-height: 55vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     border-radius: 12px;
+    background-color: var(--background-color-second);
     
 }
 
@@ -105,7 +109,7 @@
     width: min(340px, 100%);
     background-color: var(--custom-purple);
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -121,10 +125,10 @@
 }
 
 .skill.r::before{
-    content: 'R Programming';
+    content: 'R';
     position: absolute;
     transform: rotate(-25deg) translateX(-5px) translateY(-10px);
-    left: -12%;
+    left: -4%;
     
 }
 
@@ -143,11 +147,11 @@
 }
 
 .skill.webscraping::before{
-    content: 'Web Scraping';
+    content: "NextJS";
     position: absolute;
-    transform: rotate(-25deg) translateX(5px) translateY(-8px);
-    left: -13%;
-    z-index: -1;
+    transform:  rotate(-25deg) translateX(5px) translateY(-8px);
+    left: -10%;
+    /* z-index: -1; */
  
 }
 
@@ -186,8 +190,9 @@
         left: 0;
 
     }to {
-        left: 75%;
+        left: 75%; 
 }
+
 }
 
 @keyframes move75{
@@ -243,43 +248,43 @@
 
 .dial.r.move{
     animation: move70 ;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
 .dial.javascript.move{
     animation: move80 ;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
 .dial.html.move{
     animation: move70 ;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
 .dial.css.move{
     animation: move70 ;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
 .dial.react.move{
     animation: move75 ;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
 .dial.python.move{
     animation: move50 ;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
 .dial.webscraping.move{
     animation: move45 ;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -331,9 +336,10 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    box-shadow: 10px 10px 10px 10px rgba(105, 105, 105, .15);
+    box-shadow: var(--box-shadow-two);
     padding: 30px;
     border-radius: 10px;
+    background-color: var(--background-color-second);
 }
 
 .other-skills h5{
@@ -350,4 +356,5 @@
     padding-left: 50px;
     font-style: italic;
     font-size: min(18px, 3vw );
+    color: var(--main-text-color);
 }

@@ -3,12 +3,13 @@
     margin: 16vh auto;
     border: 2px solid var(--secondary-text);
     width: min(80%, 780px );
-    box-shadow: 0px 0px 10px 20px rgba(53, 53, 53, 0.1);
+    box-shadow: var(--box-shadow-one);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 1rem;
     overflow: hidden;
+    background-color: var(--background-color-second);
 }
 
 .about__two__panel{
@@ -22,6 +23,7 @@
     font-size: 4.3rem;
     display: inline;
     font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
 }
 
 
@@ -34,16 +36,14 @@
 }
 
 .about__two__contact{
-
    flex-basis: 60%;
    text-align: center;
    font-family: 'Roboto Slab', serif;
-  
 }
 
 .about__two__contact > *{
     font-size: 18px;
-    color: black;
+    color: var(--main-text-color);
     margin-bottom: 14px;
     white-space: nowrap;
     font-weight: 500;
@@ -90,7 +90,7 @@
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     padding: 0px 16px;
-    color: black;
+    color: var(--main-text-color);
 }
 
 .details-paragraph-bottom:before{
