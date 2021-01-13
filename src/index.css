@@ -16,6 +16,7 @@
     --switcher-color: rgb(243, 208, 92);
     --box-shadow-one: 0px 0px 10px 20px rgba(53, 53, 53, 0.1);
     --box-shadow-two: 5px 5px 10px 10px rgba(105, 105, 105, .2);
+    
 }
 
 :root.dark{
@@ -27,6 +28,7 @@
     --box-shadow-one: 5px 5px 10px 10px rgba(0, 0, 0, .3);
     --custom-purple: rgb(183, 192, 188);
     --box-shadow-two: 5px 5px 10px 10px rgba(0, 0, 0, .3);
+    --accent-grey: #1da1f2;
 }
 
 *{
