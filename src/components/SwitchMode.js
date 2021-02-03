@@ -2,15 +2,12 @@ import React, {  useEffect, useState } from 'react'
 import "../css/switchMode.css"
 
 const SwitchMode = () => {
-
-
     const [mode, setMode ] = useState('')
 
     useEffect(()=> {
         const current = JSON.parse(localStorage.getItem('MODE')) || 'lightmode'
         setMode(current)
         if(current === "darkmode"){
-            console.log('current is dark')
             document.documentElement.classList.add('dark')
         }
             
@@ -33,10 +30,10 @@ const SwitchMode = () => {
 
 
     return (
-        <div className = 'switch__container' onClick = {handleChange}>
-            <i className="fas fa-sun"></i>
+        <div className = 'switch__container' role = 'changes between light and dark mode'>
+            <i className="fas fa-sun"  ></i>
             <i className="fas fa-moon"></i>
-            <button  className = {`switch_btn ${mode}`}></button>
+            <button  className = {`switch_btn ${mode}`} onClick = {handleChange}></button>
         </div>
     )
 }

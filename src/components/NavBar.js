@@ -75,8 +75,8 @@ const NavBar = () => {
         <div className = 'nav-container' style = { location.pathname === "/" || location.pathname === "/contact"  ? {backgroundColor : 'transparent'} : {backgroundColor : 'var(--background-color)'}}>
             <nav >
                 <div className = 'nav-links'>
-                    <div className = 'logo-container' style = {location.pathname === "/" ? {backgroundColor : 'var(--custom-orange)'} : {backgroundColor : "rgb(105, 105, 105)"}} >
-                        <NavLink to = '/' className = 'back-home'> <p>MW</p> </NavLink>
+                    <div className = 'logo-container'  style = {location.pathname === "/" ? {backgroundColor : 'var(--custom-orange)'} : {backgroundColor : "rgb(105, 105, 105)"}}>
+                        <NavLink to = '/' className = 'back-home'> MW </NavLink>
                     </div>
                     <div className =  'link-container' >
                         {useHamburger ? <Hamburger handleClick = {handleClick} hamburgerOpen = {hamburgerOpen}/> : ( <><NavLink to="/about" activeClassName="currentPage"> About</NavLink>

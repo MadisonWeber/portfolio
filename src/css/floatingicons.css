@@ -39,7 +39,7 @@
 }
 
 .fa-python{
-    color: rgb(25, 30, 37);
+    color: var(--main-text-color);
 }
 
 .fa-react{
