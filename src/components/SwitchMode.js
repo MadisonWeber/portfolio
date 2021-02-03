@@ -30,7 +30,7 @@ const SwitchMode = () => {
 
 
     return (
-        <div className = 'switch__container' role = 'changes between light and dark mode'>
+        <div className = 'switch__container'>
             <i className="fas fa-sun"  ></i>
             <i className="fas fa-moon"></i>
             <button  className = {`switch_btn ${mode}`} onClick = {handleChange}></button>
