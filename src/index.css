@@ -1,280 +1,264 @@
-
 :root {
-    --background-color: #fff;
-    --background-color-second: #fff;
-    --main-text-color : black;
-    --custom-purple: rgb(161, 151, 255);
-    --custom-orange:rgb(247, 139, 76);
-    --accent-grey: rgba(53, 53, 53, 0.4);
-    --secondary-text: rgb(105, 105, 105);
-    --switcher-color: rgb(243, 208, 92);
-    --box-shadow-one: 0px 0px 10px 20px rgba(53, 53, 53, 0.1);
-    --box-shadow-two: 5px 5px 10px 10px rgba(105, 105, 105, .2);
-    
+  --background-color: #fff;
+  --background-color-second: #fff;
+  --main-text-color: black;
+  --custom-purple: rgb(161, 151, 255);
+  --custom-orange: rgb(247, 139, 76);
+  --accent-grey: rgba(53, 53, 53, 0.4);
+  --secondary-text: rgb(105, 105, 105);
+  --switcher-color: rgb(243, 208, 92);
+  --box-shadow-one: 0px 0px 10px 20px rgba(53, 53, 53, 0.1);
+  --box-shadow-two: 5px 5px 10px 10px rgba(105, 105, 105, 0.2);
+  --lightgray: "lightgray";
+  --eee: "#eeeeee";
+  --slategrey: "slategrey";
+  font-family: BlinkMacSystemFont, system-ui, -apple-system, "Segoe UI";
 }
 
-:root.dark{
-    --background-color: #1a2635;
-    --background-color-second:  #243447;;
-    --main-text-color: white;
-    --custom-orange: #1da1f2;
-    --secondary-text : rgb(183, 192, 188);
-    --box-shadow-one: 5px 5px 10px 10px rgba(0, 0, 0, .3);
-    --custom-purple: rgb(183, 192, 188);
-    --box-shadow-two: 5px 5px 10px 10px rgba(0, 0, 0, .3);
-    --accent-grey: #1da1f2;
+:root.dark {
+  --background-color: #1a2635;
+  --background-color-second: #243447;
+  --main-text-color: white;
+  --custom-orange: #1da1f2;
+  --secondary-text: rgb(183, 192, 188);
+  --box-shadow-one: 5px 5px 10px 10px rgba(0, 0, 0, 0.3);
+  --custom-purple: rgb(183, 192, 188);
+  --box-shadow-two: 5px 5px 10px 10px rgba(0, 0, 0, 0.3);
+  --accent-grey: #1da1f2;
+  --lightgray: "lightgray";
+  --eee: "#eeeeee";
+  --slategrey: "slategrey";
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: var(--background-color);
-
+body {
+  background-color: var(--background-color);
+  font-family: BlinkMacSystemFont, system-ui, -apple-system, "Segoe UI";
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 @keyframes openingAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.7;
+  }
 
-    0%{
-        opacity: 0;
-
-    }50%{
-        opacity: .4;
-    }75%{
-        opacity: .7;
-    }
-    
-    100%{
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes opacityIn {
-    from{
-        opacity: 0;
-    }to{
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 
 /* Random stuff */
 
-.ham{
-    background-color: transparent;
+.ham {
+  background-color: transparent;
 }
 
-
-.openBtn{
-    background: transparent;
-    border: none;
-    outline:none;
-    opacity: 1;
-    transition: opacity 700ms ease-in;
-    cursor: pointer;
-    
+.openBtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  opacity: 1;
+  transition: opacity 700ms ease-in;
+  cursor: pointer;
 }
 
-.openBtn:hover{
-    transform: scale(1.05);
+.openBtn:hover {
+  transform: scale(1.05);
 }
 
-
-
-.openBtn img{
-    border: none;
-    outline:none;
-    object-fit: contain;
-    height: 40px;
-    width: auto;
-
+.openBtn img {
+  border: none;
+  outline: none;
+  object-fit: contain;
+  height: 40px;
+  width: auto;
 }
 
-.link-container-hamburger-closed{
-        
-    height: 100%;
-    display: flex;
+.link-container-hamburger-closed {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+  bottom: 0;
+  padding: 15px;
+  align-items: center;
+  background-color: rgba(53, 53, 53, 0.9);
+  color: white;
+  transition: all 600ms ease-in-out;
+  transform: translateX(800px);
+}
+
+.link-container-hamburger-closed a:first-child {
+  margin-top: 4rem;
+}
+
+.link-container-hamburger-closed a {
+  color: white !important;
+  width: 60%;
+  border-bottom: 3px solid black;
+  text-align: center;
+  margin-bottom: 2rem !important;
+}
+
+.link-container-hamburger-closed a:hover {
+  border-bottom: 3px solid var(--custom-orange) !important;
+}
+
+.open {
+  transform: translateX(0px);
+}
+
+.close-hamburger {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--custom-orange);
+  font-size: 2rem;
+  transition: transform 400ms ease-in-out;
+}
+
+.close-hamburger:hover {
+  transform: rotate(180deg);
+}
+
+.hideBtn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 1000px) {
+  .profile-image {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-container {
+    height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .portfolio-button-container {
+    display: none;
+  }
+
+  .about-upper {
     flex-direction: column;
-    width: 60vw;
-    position: fixed;
-    right: 0;
-    z-index: 10;
-    bottom: 0;
-    padding: 15px;
-    align-items: center;
-    background-color: rgba(53, 53, 53, 0.9);
-    color: white;
-    transition: all 600ms ease-in-out;
-    transform: translateX(800px); 
-    
+    justify-content: space-around;
+    flex: 0.65;
+  }
+
+  .leafs {
+    height: 0.6rem;
+  }
+
+  .details-paragraph {
+    font-size: 13px;
+  }
+
+  .about-detail {
+    margin-bottom: 2rem;
+    display: flex;
+  }
+
+  .show-skills-button {
+    width: 80%;
+  }
+
+  .portfolio-card {
+    height: min(660px, 35vh);
+  }
 }
 
-.link-container-hamburger-closed a:first-child{
-    margin-top: 4rem;
+@media (max-width: 650px) {
+  .portfolio-description {
+    display: none;
+  }
 }
 
-.link-container-hamburger-closed a{
-    color: white !important;
-    width: 60%;
-    border-bottom: 3px solid black;
-    text-align: center;
-    margin-bottom: 2rem !important;
-}
+@media (max-width: 500px) {
+  .portfolio-card-image {
+    flex-grow: 1;
+  }
 
-.link-container-hamburger-closed a:hover{
-    border-bottom: 3px solid var(--custom-orange) !important;
-}
-
-.open{
-    transform: translateX(0px);
-}
-
-.close-hamburger{
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background-color: transparent;
-    border: none;
-    outline:none;
-    cursor: pointer;
-    color: var(--custom-orange);
-    font-size: 2rem;
-    transition: transform 400ms ease-in-out;
-}
-
-.close-hamburger:hover{
-    transform: rotate(180deg);
-}
-
-.hideBtn{
-    opacity: 0;
-    pointer-events: none;
-    
-}
-
-@media(max-width: 1000px){
-    .profile-image{
-        margin-left: 0;
-    }
-}
-
-@media(max-width: 800px){
-    .about-container{
-        height: 100vh;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-    .portfolio-button-container{
-        display: none;
-    }
-
-    .about-upper{
-        flex-direction: column;
-        justify-content: space-around;
-        flex: .65;
-        
-    }
-
-    .leafs{
-        height: .6rem;
-       
-    }
-
-    .details-paragraph{
-        font-size: 13px;
-    }
-
-    .about-detail{
-        margin-bottom: 2rem;
-        display: flex;
-        
-        
-    }
-    
-    .show-skills-button{
-        width: 80%;
-    }
-
-    .portfolio-card{
-        height: min(660px, 35vh)
-    }
-   
-
-}
-
-@media(max-width : 650px){
-    .portfolio-description{
-        display: none;
-    }
-}
-
-@media(max-width: 500px){
-    
-
-    .portfolio-card-image{
-        flex-grow: 1;
-    }
-
-    .website-link,
-    .github-link{
+  .website-link,
+  .github-link {
     height: 24%;
     width: 28%;
+  }
 
-    }
-    
-    .dial{ 
+  .dial {
     height: 40px;
     width: 40px;
+  }
 
-    }
-
-    .logo-container{
-        margin-left: 10px !important;
-    }
-    
+  .logo-container {
+    margin-left: 10px !important;
+  }
 }
 
-@media(max-width: 376px){
+@media (max-width: 376px) {
+  .about-container {
+    height: 140vh;
+  }
 
-    .about-container{
-        height: 140vh;
-    }
+  .landing-container h1 {
+    font-size: 3.5rem;
+  }
 
-    .landing-container h1{
-        font-size: 3.5rem;
-        
-    }
+  .show-skills-button {
+    width: 100%;
+    font-size: 12px;
+  }
 
-    .show-skills-button{
-         width: 100%;
-         font-size: 12px;
-    }
+  .contact-container {
+    width: 340px;
+  }
 
-    .contact-container{
-        width: 340px;
-    }
+  .contact-container h3 {
+    font-size: 28px;
+  }
 
-    .contact-container h3{
-        font-size: 28px;
-    }
+  .contact-container h6 {
+    font-size: 17px;
+  }
 
-    .contact-container h6{
-        font-size: 17px;
-    }
-    
-    form{
-        width: 85%;
-    }
+  form {
+    width: 85%;
+  }
 
-    .email{
-        font-size: 17px;
-    }
+  .email {
+    font-size: 17px;
+  }
 }

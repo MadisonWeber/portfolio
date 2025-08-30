@@ -1,0 +1,154 @@
+.about__two__container {
+  margin: 16vh auto;
+  /* border: 2px solid var(--secondary-text); */
+  border: 1px solid black;
+  width: 80%;
+  border-radius: 20px;
+  padding: 40px;
+  overflow: hidden;
+  background-color: var(--background-color-second);
+}
+
+.about__two__panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px 0;
+  border: 1px solid green;
+}
+
+.about__two__container > h1 {
+  font-size: 40px;
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+}
+
+.about__two__top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* justify-content: space-around; */
+  flex: 0.5;
+}
+
+.about__two__contact {
+  flex-basis: 60%;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+
+.about__two__contact > * {
+  font-size: 18px;
+  color: var(--main-text-color);
+  margin-bottom: 14px;
+  white-space: nowrap;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+}
+
+.about__two__question {
+  font-size: 20px;
+  color: var(--secondary-text);
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.avatar {
+  height: 300px;
+  width: 300px;
+  border-radius: 12px;
+  background-color: #eeeeee;
+  border: 1px solid lightgray;
+  object-fit: contain;
+}
+
+.about__two__photo {
+  height: 220px;
+  object-fit: cover;
+}
+
+.about__two__bottom {
+  flex: 0.5;
+  flex-grow: 1;
+}
+
+.about__two__bottom > h4 {
+  font-size: 26px;
+  padding-left: 5px;
+  letter-spacing: 2px;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--secondary-text);
+}
+
+.details-paragraph-bottom {
+  line-height: 1.4;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  padding: 0px 16px;
+  color: var(--main-text-color);
+}
+
+.details-paragraph-bottom:before {
+  margin-left: 5px;
+  content: "I";
+  line-height: 1.4;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+
+.about-me-two {
+  margin: 20px 0;
+}
+
+.fav-tech {
+  font-size: 26px;
+  padding-left: 5px;
+  letter-spacing: 1px;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--secondary-text);
+}
+
+.leafs {
+  height: 1rem;
+  width: auto;
+}
+
+@media (max-width: 800px) {
+  .about__two__container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 700px) {
+  .about__two__container {
+    text-align: center;
+  }
+
+  .about__two__top {
+    flex-direction: column;
+  }
+
+  .avatar {
+    margin-bottom: 30px;
+  }
+
+  .about-me-two {
+    margin: 35px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .about__two__question {
+    font-size: 14px;
+  }
+
+  .about__two__contact > p {
+    font-size: 16px;
+  }
+
+  .details-paragraph-bottom {
+    font-size: 14px;
+  }
+}
